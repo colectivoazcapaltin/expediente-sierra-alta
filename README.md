@@ -19,7 +19,7 @@ Este repositorio resguarda la evidencia documental sobre el cumplimiento de los 
 
 Para consultar los archivos escaneados, acuses oficiales, solicitudes PNT y cartas formales en versión íntegra, acceda al directorio público de descarga:
 
-👉 ****
+👉 **https://drive.google.com/drive/folders/1PR3oXvKwpD5BfNDimlMcG0C7SRK3TONK**
 
 ---
 
