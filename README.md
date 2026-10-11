@@ -105,3 +105,55 @@ Se autoriza su consulta, difusión académica y réplica comunitaria no comercia
 ---
 **Colectivo Azcapaltin / Proyecto Yolitli**  
 *Observatorio Cívico de Derechos Humanos, Transparencia y Territorialidad en la Sierra Alta de Hidalgo*[cite: 2, 3].
+
+# 🏛️ COLECTIVO AZCAPALTIN | OBSERVATORIO CÍVICO DE DERECHOS HUMANOS
+## Repositorio Oficial y Documentación Pública de la Sierra Alta de Hidalgo
+
+---
+
+### I. FICHA DE DATOS DE REFERENCIA OFICIAL
+
+| Campo Institucional | Detalle / Registro en Indexador Maestro |
+| :--- | :--- |
+| **Folio Activo PNT / ITAIH** | [130224600003826](https://www.plataformadetransparencia.org.mx) *(Acceso e Inserción de la Iniciativa Yolitli en Tepehuacán de Guerrero)*[span_5](start_span)[span_5](end_span)[span_6](start_span)[span_6](end_span) |
+| **Expediente de Derechos Humanos** | CDHEH `VT.H-0158-26` *(Acompañamiento, Medidas Cautelares y Unificación de Cuadernos)*[span_7](start_span)[span_7](end_span)[span_8](start_span)[span_8](end_span)[span_9](start_span)[span_9](end_span) |
+| **Enlace de Registro Oficial (Google Forms)** | [Formulario de Adhesión Cívica y Consulta Popular](https://forms.gle/qLmCQNKKNjrrkxW56)[span_10](start_span)[span_10](end_span)[span_11](start_span)[span_11](end_span) |
+| **Sujeto Obligado / Jurisdicción** | H. Ayuntamiento de Tepehuacán de Guerrero, Hidalgo / Región Sierra Alta[span_12](start_span)[span_12](end_span)[span_13](start_span)[span_13](end_span)[span_14](start_span)[span_14](end_span) |
+| **Materia** | Transparencia, Veeduría de Obras Públicas, CPLI y Gobernanza Comunitaria[span_15](start_span)[span_15](end_span)[span_16](start_span)[span_16](end_span)[span_17](start_span)[span_17](end_span) |
+| **Precedente Constitucional Invocado** | Amparo en Revisión 1005/2018 (SCJN), Convenio 169 OIT y Artículos 1°, 6° y 8° de la CPEUM[span_18](start_span)[span_18](end_span)[span_19](start_span)[span_19](end_span)[span_20](start_span)[span_20](end_span) |
+
+---
+
+### II. SÍNTESIS EJECUTIVA Y CONTEXTO TERRITORIAL
+
+El **Colectivo Azcapaltin**, a través de su plataforma de enlace cívico *Lugar de Hormigas*, ha formalizado la apertura del **Padrón de Adherentes de la Junta General** mediante el despliegue de su infraestructura digital de captación ciudadana[span_21](start_span)[span_21](end_span)[span_22](start_span)[span_22](end_span). Esta herramienta operativa permite canalizar las demandas territoriales de la Sierra Alta de Hidalgo (Tepehuacán de Guerrero, Lolotla, Tlanchinol, Molango y Zacualtipán), vinculando la veeduría social con los expedientes activos de transparencia (PNT) y protección de derechos humanos (`VT.H-0158-26`)[span_23](start_span)[span_23](end_span)[span_24](start_span)[span_24](end_span)[span_25](start_span)[span_25](end_span)[span_26](start_span)[span_26](end_span).
+
+---
+
+### III. SUSTENTO TÉCNICO-JURÍDICO
+
+1. **Consulta Previa, Libre e Informada (CPLI):** Apego al Convenio 169 de la OIT y reconocimiento de los derechos lingüísticos e identidad cultural de las comunidades originarias en los procesos de fiscalización cívica[span_27](start_span)[span_27](end_span)[span_28](start_span)[span_28](end_span).
+2. **Protección Socioambiental (LGEEPA / POETH):** Aplicación de la matriz ambiental del *Proyecto Yolitli* sobre la UGA XIV y el Bosque Mesófilo de Montaña para auditar proyectos de infraestructura y mitigación de impactos[span_29](start_span)[span_29](end_span)[span_30](start_span)[span_30](end_span)[span_31](start_span)[span_31](end_span).
+3. **Garantías de Anonimización (Hard Guardrails):** En estricta observancia de la *Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados*, se garantiza el anonimato y la confidencialidad absoluta de los datos de los adherentes, prohibiendo la filtración o uso indebido de la información personal[span_32](start_span)[span_32](end_span)[span_33](start_span)[span_33](end_span).
+
+---
+
+### IV. DIRECTORIO DE EVIDENCIA DOCUMENTAL Y ENLACES ABIERTOS
+
+* 🔗 **Acceso al Formulario Oficial:** [https://forms.gle/qLmCQNKKNjrrkxW56](https://forms.gle/qLmCQNKKNjrrkxW56)[span_34](start_span)[span_34](end_span)[span_35](start_span)[span_35](end_span)
+* 📂 **Repositorio Legal y Expedientes:** `REPOSITORIO_LEGAL/VT.H-0158-26/`[span_36](start_span)[span_36](end_span)
+* 📄 **Matriz de Factibilidad Técnica Tepehuacán:** `ECOSISTEMA_AZCAPALTIN_2.0/01_PROYECTO_EJECUTIVO_YOLITLI/`[span_37](start_span)[span_37](end_span)
+* 📊 **Catálogo Maestro PNT:** `01_REPOSITORIO_GENERAL/Solicitudes por Remitente/CATALOGO_MAESTRO_PNT`[span_38](start_span)[span_38](end_span)
+
+---
+
+### V. CLÁUSULA DE COMPROMISO INSTITUCIONAL Y DERECHOS RESERVADOS
+
+> **Salvaguarda de Propiedad Intelectual y Titularidad Colectiva (LFDA / INDAUTOR):**  
+> Todas las metodologías, diseños técnicos, matrices de factibilidad, sistemas de indicadores (KPIs) y denominaciones originales (*Proyecto Yolitli*, *Lugar de Hormigas*, *Colectivo Azcapaltin*) constituyen obras colectivas inalienables resguardadas por la Ley Federal del Derecho de Autor y registradas bajo la titularidad moral de sus creadores y la licencia institucional del Colectivo Azcapaltin[span_39](start_span)[span_39](end_span)[span_40](start_span)[span_40](end_span). Queda estrictamente prohibida cualquier apropiación indebida, uso comercial, registro marcario no autorizado o aprovechamiento con fines de proselitismo político por parte de terceros[span_41](start_span)[span_41](end_span)[span_42](start_span)[span_42](end_span).  
+> 
+> **Licencia de Uso Público:** Permiso concedido bajo modalidad **CC BY-NC-SA 4.0** *(Atribución - No Comercial - Compartir Igual)* para fines estrictamente cívicos, comunitarios y de fiscalización social[span_43](start_span)[span_43](end_span)[span_44](start_span)[span_44](end_span).
+
+---
+**COLECTIVO AZCAPALTIN | PLATAFORMA LUGAR DE HORMIGAS**  
+*Mesa 5: Coordinación Operativa, Difusión Cívica y Comunicación Popular*[span_45](start_span)[span_45](end_span)[span_46](start_span)[span_46](end_span)
