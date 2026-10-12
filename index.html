@@ -1,145 +1,161 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colectivo Azcapaltin | Observatorio Cívico</title>
-    <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --accent-color: #38bdf8;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --border-color: #334155;
+    <title>Colectivo Azcapaltin | Expediente Sierra Alta & Proyecto YOLITLI</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        yolitli: '#1B3B2B',
+                        azcapaltin: '#000000',
+                        monero: '#FF6600',
+                    }
+                }
+            }
         }
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            text-align: center;
-            padding: 3rem 1rem;
-            border-bottom: 1px solid var(--border-color);
-            background: linear-gradient(to bottom, #1e293b, #0f172a);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-            letter-spacing: 1px;
-        }
-        header p {
-            color: var(--accent-color);
-            font-weight: 500;
-            margin-top: 0.5rem;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-        }
-        .card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-        .card h3 {
-            margin-top: 0;
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 0.5rem;
-            font-size: 1.2rem;
-        }
-        .btn-group {
-            display: flex;
-            flex-direction: column;
-            gap: 0.8rem;
-            margin-top: 1rem;
-        }
-        .btn {
-            display: block;
-            text-align: center;
-            background-color: var(--accent-color);
-            color: #0f172a;
-            padding: 0.75rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: opacity 0.2s;
-        }
-        .btn:hover {
-            opacity: 0.9;
-        }
-        .btn-outline {
-            background-color: transparent;
-            border: 1px solid var(--accent-color);
-            color: var(--accent-color);
-        }
-        .btn-outline:hover {
-            background-color: var(--accent-color);
-            color: #0f172a;
-        }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            border-top: 1px solid var(--border-color);
-            margin-top: 3rem;
-        }
-    </style>
+    </script>
 </head>
-<body>
+<body class="bg-black text-zinc-100 font-sans antialiased selection:bg-emerald-500 selection:text-black">
 
-    <header>
-        <h1>🏛️ COLECTIVO AZCAPALTIN</h1>
-        <p>Observatorio Cívico de Derechos Humanos & Plataforma Lugar de Hormigas</p>
+    <!-- Header Institucional -->
+    <header class="border-b border-zinc-800 bg-zinc-950/90 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-white text-black font-extrabold flex items-center justify-center rounded-full text-lg tracking-tighter shadow-lg">
+                    AZ
+                </div>
+                <div>
+                    <h1 class="font-bold text-base md:text-lg leading-none uppercase tracking-wider text-white">Colectivo Azcapaltin</h1>
+                    <p class="text-xs text-emerald-400 font-mono mt-1">Ecosistema YOLITLI & Iconnical</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-xs uppercase tracking-wider font-semibold text-zinc-400">
+                <a href="#expediente" class="hover:text-white transition">Expediente</a>
+                <a href="#redes" class="hover:text-white transition">Comunidad & Feeds</a>
+                <a href="#donaciones" class="hover:text-amber-400 transition">Donar (XMR)</a>
+            </nav>
+        </div>
     </header>
 
-    <div class="container">
-        <!-- Widget de Accesos Principales -->
-        <div class="card">
-            <h3>📌 Canales y Formulario Oficial</h3>
-            <p style="color: var(--text-muted);">Súmate a nuestra red ciudadana y ejerce tu derecho a la veeduría social en la Sierra Alta.</p>
-            <div class="btn-group">
-                <a href="https://forms.gle/qLmCQNKKNjrrkxW56" target="_blank" class="btn">📝 Registro de Adherentes (Google Forms)</a>
-                <a href="https://github.com" target="_blank" class="btn btn-outline">🐙 Repositorio GitHub (Normativa)</a>
-                <a href="https://discord.com" target="_blank" class="btn btn-outline">💬 Unirse al Canal de Discord</a>
+    <!-- Hero Section -->
+    <section class="relative px-6 py-20 max-w-5xl mx-auto text-center border-b border-zinc-900">
+        <span class="text-[10px] font-mono bg-emerald-950 text-emerald-400 border border-emerald-800/80 px-3 py-1 rounded-full uppercase tracking-widest">
+            Gobernanza Cívica & Conservación Territorial
+        </span>
+        <h2 class="text-3xl md:text-5xl font-extrabold mt-6 tracking-tight text-white leading-tight">
+            Expediente Sierra Alta & Proyecto YOLITLI
+        </h2>
+        <p class="text-zinc-400 max-w-2xl mx-auto mt-4 text-sm md:text-base leading-relaxed">
+            Mecanismo cívico de fiscalización, preservación del Bosque Mesófilo de Montaña y ordenamiento ambiental comunitario en Hidalgo.
+        </p>
+
+        <!-- Botones de Acción Directa -->
+        <div class="flex flex-wrap justify-center gap-4 mt-8">
+            <a href="https://github.com/colectivoazcapaltin/expediente-sierra-alta" target="_blank" 
+               className="flex items-center space-x-2 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 px-5 py-3 rounded-lg font-semibold text-xs tracking-wider uppercase transition text-white">
+                <i class="fa-brands fa-github text-lg"></i>
+                <span>Repositorio GitHub</span>
+            </a>
+            <a href="https://discord.gg/EP7hhfhdd" target="_blank" 
+               className="flex items-center space-x-2 bg-indigo-600 hover:bg-indigo-500 px-5 py-3 rounded-lg font-semibold text-xs tracking-wider uppercase transition text-white shadow-lg shadow-indigo-600/20">
+                <i class="fa-brands fa-discord text-lg"></i>
+                <span>Comunidad Discord</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Secciones de Widgets y Canales -->
+    <section id="redes" class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-8">
+        
+        <!-- Tarjeta X / Twitter -->
+        <div class="bg-zinc-950 border border-zinc-800 rounded-xl p-6 flex flex-col justify-between">
+            <div>
+                <div class="flex items-center justify-between pb-4 border-b border-zinc-800 mb-4">
+                    <h3 class="font-bold text-xs uppercase tracking-wider text-zinc-300">Actualizaciones Oficiales</h3>
+                    <i class="fa-brands fa-x-twitter text-zinc-400"></i>
+                </div>
+                <p class="text-xs text-zinc-400 leading-relaxed">
+                    Monitoreo continuo de solicitudes PNT, dictámenes municipales y la agenda de desarrollo sostenible en la Sierra Alta.
+                </p>
+            </div>
+            <a href="https://x.com/Azcapaltin" target="_blank" class="mt-6 inline-block text-center bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs font-semibold py-2.5 rounded-lg transition text-zinc-200">
+                Seguir en @Azcapaltin
+            </a>
+        </div>
+
+        <!-- Tarjeta Discord Status -->
+        <div class="bg-zinc-950 border border-zinc-800 rounded-xl p-6 flex flex-col justify-between">
+            <div>
+                <div class="flex items-center justify-between pb-4 border-b border-zinc-800 mb-4">
+                    <h3 class="font-bold text-xs uppercase tracking-wider text-zinc-300">Asamblea Virtual</h3>
+                    <i class="fa-brands fa-discord text-indigo-400"></i>
+                </div>
+                <p class="text-xs text-zinc-400 leading-relaxed">
+                    Canales de coordinación comunitaria, avisos institucionales e integración al Padrón de Adherentes de la Junta General.
+                </p>
+            </div>
+            <a href="https://discord.gg/EP7hhfhdd" target="_blank" class="mt-6 inline-block text-center bg-indigo-950/50 hover:bg-indigo-900/50 border border-indigo-800/80 text-indigo-300 text-xs font-semibold py-2.5 rounded-lg transition">
+                Entrar al Servidor
+            </a>
+        </div>
+
+        <!-- Módulo de Donación Monero (XMR) -->
+        <div id="donaciones" class="bg-gradient-to-b from-zinc-900 to-zinc-950 border border-amber-900/50 rounded-xl p-6 flex flex-col justify-between">
+            <div>
+                <div class="flex items-center justify-between pb-4 border-b border-zinc-800 mb-4">
+                    <h3 class="font-bold text-xs uppercase tracking-wider text-amber-400">Fondo Autónomo Monero (XMR)</h3>
+                    <i class="fa-brands fa-monero text-amber-500 text-lg"></i>
+                </div>
+                <p class="text-xs text-zinc-400 leading-relaxed mb-4">
+                    Aportaciones incorruptibles y autónomas para respaldar investigaciones cívicas e inspección ambiental independiente.
+                </p>
+                <div id="xmr-address" class="bg-black p-3 rounded border border-zinc-800 font-mono text-[10px] break-all text-zinc-400">
+                    888t8T1234567890abcdefghijklmnopqrstuvwxyzMoneroAddressPlaceholder
+                </div>
+            </div>
+            <button onclick="copyXMR()" class="mt-4 w-full bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 border border-amber-500/30 font-semibold py-2.5 rounded-lg text-xs transition flex items-center justify-center space-x-2">
+                <i class="fa-regular fa-copy"></i>
+                <span id="copy-btn-text">Copiar Dirección XMR</span>
+            </button>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-zinc-900 bg-zinc-950 text-xs text-zinc-500 py-8">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>© 2026 Colectivo Azcapaltin. Derechos e Identidad Reservados.</p>
+            <div class="flex space-x-6 text-zinc-400">
+                <a href="https://github.com/colectivoazcapaltin" target="_blank" class="hover:text-white">GitHub</a>
+                <a href="https://x.com/Azcapaltin" target="_blank" class="hover:text-white">X / Twitter</a>
+                <a href="https://discord.gg/EP7hhfhdd" target="_blank" class="hover:text-white">Discord</a>
             </div>
         </div>
-
-        <!-- Widget de Transparencia y Expedientes -->
-        <div class="card">
-            <h3>📊 Transparencia y Litigio Social</h3>
-            <p style="color: var(--text-muted);">Consulta abierta de folios en la PNT, medidas cautelares y el expediente madre CDHEH <strong>VT.H-0158-26</strong>[span_6](start_span)[span_6](end_span)[span_7](start_span)[span_7](end_span).</p>
-            <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.95rem;">
-                <li>Estatus PNT: En Plazo / Impugnado[span_8](start_span)[span_8](end_span)</li>
-                <li>Defensa del Bosque Mesófilo (UGA XIV)[span_9](start_span)[span_9](end_span)</li>
-                <li>Proyecto Yolitli y Economía Circular[span_10](start_span)[span_10](end_span)</li>
-            </ul>
-        </div>
-
-        <!-- Widget de Redes y Actualidad -->
-        <div class="card">
-            <h3>📢 Publicaciones en Tiempo Real</h3>
-            <p style="color: var(--text-muted);">Feed activo de nuestros comunicados, posicionamientos y boletines informativos emitidos desde la Sierra Alta.</p>
-            <div class="btn-group">
-                <a href="https://facebook.com" target="_blank" class="btn btn-outline">🌐 Ver Muro de Lugar de Hormigas</a>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Colectivo Azcapaltin / Proyecto Yolitli. Obra colectiva protegida bajo licencia CC BY-NC-SA 4.0[span_11](start_span)[span_11](end_span)[span_12](start_span)[span_12](end_span).</p>
     </footer>
 
+    <script>
+        function copyXMR() {
+            const address = document.getElementById('xmr-address').innerText;
+            navigator.clipboard.writeText(address);
+            const btnText = document.getElementById('copy-btn-text');
+            btnText.innerText = '¡Dirección Copiada!';
+            setTimeout(() => {
+                btnText.innerText = 'Copiar Dirección XMR';
+            }, 2000);
+        }
+    </script>
 </body>
 </html>
