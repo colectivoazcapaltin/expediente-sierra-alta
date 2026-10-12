@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colectivo Azcapaltin | Observatorio Cívico</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+        }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+            background: linear-gradient(to bottom, #1e293b, #0f172a);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+        header p {
+            color: var(--accent-color);
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+        .btn {
+            display: block;
+            text-align: center;
+            background-color: var(--accent-color);
+            color: #0f172a;
+            padding: 0.75rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.2s;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+        }
+        .btn-outline:hover {
+            background-color: var(--accent-color);
+            color: #0f172a;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🏛️ COLECTIVO AZCAPALTIN</h1>
+        <p>Observatorio Cívico de Derechos Humanos & Plataforma Lugar de Hormigas</p>
+    </header>
+
+    <div class="container">
+        <!-- Widget de Accesos Principales -->
+        <div class="card">
+            <h3>📌 Canales y Formulario Oficial</h3>
+            <p style="color: var(--text-muted);">Súmate a nuestra red ciudadana y ejerce tu derecho a la veeduría social en la Sierra Alta.</p>
+            <div class="btn-group">
+                <a href="https://forms.gle/qLmCQNKKNjrrkxW56" target="_blank" class="btn">📝 Registro de Adherentes (Google Forms)</a>
+                <a href="https://github.com" target="_blank" class="btn btn-outline">🐙 Repositorio GitHub (Normativa)</a>
+                <a href="https://discord.com" target="_blank" class="btn btn-outline">💬 Unirse al Canal de Discord</a>
+            </div>
+        </div>
+
+        <!-- Widget de Transparencia y Expedientes -->
+        <div class="card">
+            <h3>📊 Transparencia y Litigio Social</h3>
+            <p style="color: var(--text-muted);">Consulta abierta de folios en la PNT, medidas cautelares y el expediente madre CDHEH <strong>VT.H-0158-26</strong>[span_6](start_span)[span_6](end_span)[span_7](start_span)[span_7](end_span).</p>
+            <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.95rem;">
+                <li>Estatus PNT: En Plazo / Impugnado[span_8](start_span)[span_8](end_span)</li>
+                <li>Defensa del Bosque Mesófilo (UGA XIV)[span_9](start_span)[span_9](end_span)</li>
+                <li>Proyecto Yolitli y Economía Circular[span_10](start_span)[span_10](end_span)</li>
+            </ul>
+        </div>
+
+        <!-- Widget de Redes y Actualidad -->
+        <div class="card">
+            <h3>📢 Publicaciones en Tiempo Real</h3>
+            <p style="color: var(--text-muted);">Feed activo de nuestros comunicados, posicionamientos y boletines informativos emitidos desde la Sierra Alta.</p>
+            <div class="btn-group">
+                <a href="https://facebook.com" target="_blank" class="btn btn-outline">🌐 Ver Muro de Lugar de Hormigas</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Colectivo Azcapaltin / Proyecto Yolitli. Obra colectiva protegida bajo licencia CC BY-NC-SA 4.0[span_11](start_span)[span_11](end_span)[span_12](start_span)[span_12](end_span).</p>
+    </footer>
+
+</body>
+</html>
