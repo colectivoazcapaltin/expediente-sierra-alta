@@ -19,27 +19,55 @@
                         mono: ['JetBrains Mono', 'monospace'],
                     },
                     colors: {
-                        yolitli: '#1B3B2B',
+                        yolitli: '#1E3A2B',
                         azcapaltin: '#000000',
-                        monero: '#FF6600',
+                        dorado: '#D4AF37',
                     }
                 }
             }
         }
     </script>
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-marquee {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 25s linear infinite;
+        }
+        .marquee-container:hover .animate-marquee {
+            animation-play-state: paused;
+        }
+    </style>
 </head>
-<body class="bg-black text-zinc-100 font-sans antialiased selection:bg-emerald-500 selection:text-black">
+<body class="bg-black text-zinc-100 font-sans antialiased selection:bg-dorado selection:text-black">
+
+    <!-- BARRA DE NOTICIAS / TICKER EN TIEMPO REAL -->
+    <div class="bg-yolitli border-b border-emerald-900 text-xs py-2 px-4 overflow-hidden marquee-container flex items-center">
+        <div class="bg-dorado text-black font-bold px-2 py-0.5 rounded text-[10px] uppercase tracking-wider mr-3 shrink-0 z-10 shadow">
+            Última Hora Cívica
+        </div>
+        <div class="whitespace-nowrap overflow-hidden w-full">
+            <span class="animate-marquee font-mono text-emerald-200">
+                ⚡ [EXPEDIENTE CDHEH VT.H-0158-26]: Seguimiento activo de medidas cautelares y unificación en la Sierra Alta de Hidalgo &nbsp;&bull;&nbsp; 
+                📋 [FOLIO PNT 130224600003826]: Veeduría de obra pública y recursos municipales en Tepehuacán de Guerrero &nbsp;&bull;&nbsp; 
+                🌱 [PROYECTO YOLITLI]: Defensa y ordenamiento ambiental del Bosque Mesófilo de Montaña (UGA XIV)
+            </span>
+        </div>
+    </div>
 
     <!-- Header Institucional -->
     <header class="border-b border-zinc-800 bg-zinc-950/90 backdrop-blur sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 bg-white text-black font-extrabold flex items-center justify-center rounded-full text-lg tracking-tighter shadow-lg">
+                <div class="w-10 h-10 bg-dorado text-yolitli font-extrabold flex items-center justify-center rounded-full text-lg tracking-tighter shadow-lg">
                     AZ
                 </div>
                 <div>
                     <h1 class="font-bold text-base md:text-lg leading-none uppercase tracking-wider text-white">Colectivo Azcapaltin</h1>
-                    <p class="text-xs text-emerald-400 font-mono mt-1">Ecosistema YOLITLI & Iconnical</p>
+                    <p class="text-xs text-dorado font-mono mt-1">Ecosistema YOLITLI & Lugar de Hormigas</p>
                 </div>
             </div>
             <nav class="hidden md:flex space-x-6 text-xs uppercase tracking-wider font-semibold text-zinc-400">
@@ -51,7 +79,7 @@
     </header>
 
     <!-- Hero Section con Identidad Biocultural -->
-    <section class="relative px-6 py-20 max-w-5xl mx-auto text-center border-b border-zinc-900">
+    <section class="relative px-6 py-16 max-w-5xl mx-auto text-center border-b border-zinc-900">
         <span class="text-[10px] font-mono bg-emerald-950 text-emerald-400 border border-emerald-800/80 px-3 py-1 rounded-full uppercase tracking-widest">
             Gobernanza Cívica & Conservación Territorial
         </span>
@@ -59,17 +87,17 @@
             Expediente Sierra Alta & Proyecto YOLITLI
         </h2>
         <p class="text-zinc-400 max-w-2xl mx-auto mt-4 text-sm md:text-base leading-relaxed">
-            Mecanismo cívico de fiscalización, preservación del Bosque Mesófilo de Montaña y ordenamiento ambiental comunitario en Hidalgo[span_5](start_span)[span_5](end_span)[span_6](start_span)[span_6](end_span).
+            Mecanismo cívico de fiscalización, preservación del Bosque Mesófilo de Montaña y ordenamiento ambiental comunitario en Hidalgo[span_6](start_span)[span_6](end_span).
         </p>
 
         <!-- Botones de Acción Directa -->
         <div class="flex flex-wrap justify-center gap-4 mt-8">
-            <a href="https://github.com/colectivoazcapaltin/expediente-sierra-alta" target="_blank" 
+            <a href="https://github.com/colectivoazcapaltin/expediente-sierra-alta" target="_blank" rel="noopener noreferrer"
                class="flex items-center space-x-2 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 px-5 py-3 rounded-lg font-semibold text-xs tracking-wider uppercase transition text-white">
                 <i class="fa-brands fa-github text-lg"></i>
                 <span>Repositorio GitHub</span>
             </a>
-            <a href="https://discord.gg/EP7hhfhdd" target="_blank" 
+            <a href="https://discord.gg/EP7hhfhdd" target="_blank" rel="noopener noreferrer"
                class="flex items-center space-x-2 bg-indigo-600 hover:bg-indigo-500 px-5 py-3 rounded-lg font-semibold text-xs tracking-wider uppercase transition text-white shadow-lg shadow-indigo-600/20">
                 <i class="fa-brands fa-discord text-lg"></i>
                 <span>Comunidad Discord</span>
@@ -77,46 +105,54 @@
         </div>
     </section>
 
-    <!-- Secciones de Widgets y Canales -->
+    <!-- Secciones de Widgets y Canales (X / Facebook / Monero) -->
     <section id="redes" class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-8">
         
-        <!-- Tarjeta X / Twitter -->
-        <div class="bg-zinc-950 border border-zinc-800 rounded-xl p-6 flex flex-col justify-between">
+        <!-- Tarjeta X / Twitter Feed -->
+        <div class="bg-zinc-950 border border-zinc-800 rounded-xl p-6 flex flex-col justify-between shadow-xl">
             <div>
                 <div class="flex items-center justify-between pb-4 border-b border-zinc-800 mb-4">
-                    <h3 class="font-bold text-xs uppercase tracking-wider text-zinc-300">Actualizaciones X</h3>
-                    <i class="fa-brands fa-x-twitter text-zinc-400"></i>
+                    <h3 class="font-bold text-xs uppercase tracking-wider text-zinc-300">Actualizaciones X (@Azcapaltin)</h3>
+                    <i class="fa-brands fa-x-twitter text-zinc-400 text-base"></i>
                 </div>
-                <p class="text-xs text-zinc-400 leading-relaxed">
-                    Seguimiento continuo de solicitudes PNT, dictámenes municipales y la agenda de desarrollo sostenible en la Sierra Alta[span_7](start_span)[span_7](end_span)[span_8](start_span)[span_8](end_span).
+                <p class="text-xs text-zinc-400 leading-relaxed mb-4">
+                    Seguimiento continuo de solicitudes PNT, dictámenes municipales y la agenda de desarrollo sostenible[span_7](start_span)[span_7](end_span).
                 </p>
+                <!-- Contenedor Integrado para Widget X -->
+                <div class="bg-black rounded-lg p-3 border border-zinc-900 text-[11px] font-mono text-zinc-400 h-36 overflow-y-auto">
+                    <p class="text-emerald-400 mb-2">▶ Fijo oficial:</p>
+                    <p>"Tlayecancatzi: Ika nochi tlatepanitaliztli wan toyolo...[span_8](start_span)"[span_8](end_span)</p>
+                </div>
             </div>
-            <a href="https://x.com/Azcapaltin" target="_blank" class="mt-6 inline-block text-center bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs font-semibold py-2.5 rounded-lg transition text-zinc-200">
-                Seguir en @Azcapaltin[span_9](start_span)[span_9](end_span)
+            <a href="https://x.com/Azcapaltin" target="_blank" rel="noopener noreferrer" class="mt-6 inline-block text-center bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs font-semibold py-2.5 rounded-lg transition text-zinc-200">
+                Visitar Perfil X[span_9](start_span)[span_9](end_span)
             </a>
         </div>
 
-        <!-- Tarjeta Discord Status -->
-        <div class="bg-zinc-950 border border-zinc-800 rounded-xl p-6 flex flex-col justify-between">
+        <!-- Tarjeta Facebook / Lugar de Hormigas -->
+        <div class="bg-zinc-950 border border-zinc-800 rounded-xl p-6 flex flex-col justify-between shadow-xl">
             <div>
                 <div class="flex items-center justify-between pb-4 border-b border-zinc-800 mb-4">
-                    <h3 class="font-bold text-xs uppercase tracking-wider text-zinc-300">Asamblea Virtual</h3>
-                    <i class="fa-brands fa-discord text-indigo-400"></i>
+                    <h3 class="font-bold text-xs uppercase tracking-wider text-zinc-300">Plataforma Lugar de Hormigas</h3>
+                    <i class="fa-brands fa-facebook text-blue-500 text-base"></i>
                 </div>
-                <p class="text-xs text-zinc-400 leading-relaxed">
-                    Canales de coordinación comunitaria, avisos institucionales e integración al Padrón de Adherentes de la Junta General[span_10](start_span)[span_10](end_span)[span_11](start_span)[span_11](end_span).
+                <p class="text-xs text-zinc-400 leading-relaxed mb-4">
+                    Comunidad de veeduría social originada en Otongo, Tepehuacán de Guerrero, Hidalgo[span_10](start_span)[span_10](end_span).
                 </p>
+                <div class="bg-black rounded-lg p-3 border border-zinc-900 text-[11px] font-mono text-zinc-400 h-36 flex items-center justify-center text-center">
+                    <span>Espacio de recopilación de datos y comentarios de la comunidad de la Sierra Alta[span_11](start_span)[span_11](end_span).</span>
+                </div>
             </div>
-            <a href="https://discord.gg/EP7hhfhdd" target="_blank" class="mt-6 inline-block text-center bg-indigo-950/50 hover:bg-indigo-900/50 border border-indigo-800/80 text-indigo-300 text-xs font-semibold py-2.5 rounded-lg transition">
-                Entrar al Servidor[span_12](start_span)[span_12](end_span)
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="mt-6 inline-block text-center bg-blue-950/40 hover:bg-blue-900/40 border border-blue-800/60 text-blue-300 text-xs font-semibold py-2.5 rounded-lg transition">
+                Consultar en Facebook
             </a>
         </div>
 
         <!-- Módulo de Donación Monero (XMR) -->
-        <div id="donaciones" class="bg-gradient-to-b from-zinc-900 to-zinc-950 border border-amber-900/50 rounded-xl p-6 flex flex-col justify-between">
+        <div id="donaciones" class="bg-gradient-to-b from-zinc-900 to-zinc-950 border border-amber-900/50 rounded-xl p-6 flex flex-col justify-between shadow-xl">
             <div>
                 <div class="flex items-center justify-between pb-4 border-b border-zinc-800 mb-4">
-                    <h3 class="font-bold text-xs uppercase tracking-wider text-amber-400">Fondo Autónomo Monero (XMR)</h3>
+                    <h3 class="font-bold text-xs uppercase tracking-wider text-dorado">Fondo Autónomo Monero (XMR)</h3>
                     <i class="fa-brands fa-monero text-amber-500 text-lg"></i>
                 </div>
                 <p class="text-xs text-zinc-400 leading-relaxed mb-4">
@@ -126,7 +162,7 @@
                     888t8T1234567890abcdefghijklmnopqrstuvwxyzMoneroAddressPlaceholder
                 </div>
             </div>
-            <button onclick="copyXMR()" class="mt-4 w-full bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 border border-amber-500/30 font-semibold py-2.5 rounded-lg text-xs transition flex items-center justify-center space-x-2">
+            <button onclick="copyXMR()" class="mt-4 w-full bg-amber-500/10 hover:bg-amber-500/20 text-dorado border border-amber-500/30 font-semibold py-2.5 rounded-lg text-xs transition flex items-center justify-center space-x-2">
                 <i class="fa-regular fa-copy"></i>
                 <span id="copy-btn-text">Copiar Dirección XMR</span>
             </button>
@@ -137,11 +173,11 @@
     <!-- Footer -->
     <footer class="border-t border-zinc-900 bg-zinc-950 text-xs text-zinc-500 py-8">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p>© 2026 Colectivo Azcapaltin. Derechos e Identidad Reservados.</p>
+            <p>© 2026 Colectivo Azcapaltin. Derechos e Identidad Reservados bajo licencia CC BY-NC-SA 4.0[span_12](start_span)[span_12](end_span).</p>
             <div class="flex space-x-6 text-zinc-400">
-                <a href="https://github.com/colectivoazcapaltin" target="_blank" class="hover:text-white">GitHub[span_13](start_span)[span_13](end_span)</a>
-                <a href="https://x.com/Azcapaltin" target="_blank" class="hover:text-white">X / Twitter[span_14](start_span)[span_14](end_span)</a>
-                <a href="https://discord.gg/EP7hhfhdd" target="_blank" class="hover:text-white">Discord[span_15](start_span)[span_15](end_span)</a>
+                <a href="https://github.com/colectivoazcapaltin" target="_blank" rel="noopener noreferrer" class="hover:text-white">GitHub[span_13](start_span)[span_13](end_span)</a>
+                <a href="https://x.com/Azcapaltin" target="_blank" rel="noopener noreferrer" class="hover:text-white">X / Twitter[span_14](start_span)[span_14](end_span)</a>
+                <a href="https://discord.gg/EP7hhfhdd" target="_blank" rel="noopener noreferrer" class="hover:text-white">Discord[span_15](start_span)[span_15](end_span)</a>
             </div>
         </div>
     </footer>
