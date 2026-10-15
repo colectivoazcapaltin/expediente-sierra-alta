@@ -15,5 +15,5 @@ El **Colectivo Azcapaltin** y la iniciativa **Proyecto Yolitli** operan como un 
 * **Hard Guardrails:** En estricto cumplimiento de la Ley General de Protección de Datos Personales (LGPDPSO), se protegen las identidades de comuneros y brigadistas mediante disociación estricta.
 
 ---
-* **Contacto Institucional:** sofiaagora@proton.me[span_12](start_span)[span_12](end_span)
-* **Plataforma Cívica:** Lugar de Hormigas[span_13](start_span)[span_13](end_span)
+* **Contacto Institucional:** sofiaagora@proton.me
+* **Plataforma Cívica:** Lugar de Hormigas
